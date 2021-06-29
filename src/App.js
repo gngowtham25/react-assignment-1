@@ -25,7 +25,7 @@ const App = () => {
       updateTableData(sourceData)
     } else {
       let filteredData = sourceData.filter((eachTableData) => {
-        return (eachTableData.firstName.toLowerCase().includes(searchText.toLowerCase()) || eachTableData.lastName.toLowerCase().includes(searchText.toLowerCase()))
+        return (eachTableData.firstName.toLowerCase().includes(searchText.toLowerCase()))
       })
       updateTableData(filteredData)
     }
